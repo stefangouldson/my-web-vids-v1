@@ -9,8 +9,8 @@ module.exports = {
   plugins: [{
     resolve: 'gatsby-source-contentful',
     options: {
-      "accessToken": "0ngqtokxlv33",
-      "spaceId": "TAaRTKhWG06QmCSLB7URTjfEflWSA_vDBn4YdyaEccs"
+      "accessToken": "TAaRTKhWG06QmCSLB7URTjfEflWSA_vDBn4YdyaEccs",
+      "spaceId": "0ngqtokxlv33"
     }
   }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-source-filesystem',
