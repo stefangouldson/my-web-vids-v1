@@ -9,10 +9,10 @@ module.exports = {
   plugins: [{
     resolve: 'gatsby-source-contentful',
     options: {
-      "accessToken": "TAaRTKhWG06QmCSLB7URTjfEflWSA_vDBn4YdyaEccs",
-      "spaceId": "0ngqtokxlv33"
+      "accessToken": process.env.CONTENTFUL_ACCESS_TOKEN,
+      "spaceId": process.env.CONTENTFUL_SPACE
     }
-  }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-sitemap", {
+  }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-sitemap", "gatsby-plugin-postcss", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
