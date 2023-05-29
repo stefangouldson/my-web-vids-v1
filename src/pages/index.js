@@ -11,9 +11,11 @@ const IndexPage = () => {
               <StaticImage src='../images/logo.png' alt='logo' placeholder='blurred' />
               <h1 className="text-4xl font-bold mb-6">We're launching soon</h1>
               <p className="text-gray-600 mb-12">Enter your email to be the first to know when we launch.</p>
-              <form className="max-w-md mx-auto">
+              <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" className="max-w-md mx-auto">
+                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="form-name" value="contact" />
                 <div className="flex items-center">
-                  <input type="email" className="bg-gray-100 mr-3 py-2 px-4 w-full rounded-md focus:outline-none focus:bg-white" placeholder="Enter your email" />
+                  <input id='email' name='email' type="email" className="bg-gray-100 mr-3 py-2 px-4 w-full rounded-md focus:outline-none focus:bg-white" placeholder="Enter your email" />
                   <button type="submit" className="bg-primary text-white py-2 px-4 rounded-md hover:opacity-75 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">Subscribe</button>
                 </div>
               </form>
