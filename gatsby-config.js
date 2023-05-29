@@ -1,6 +1,8 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: `My Web Vids V1`,
