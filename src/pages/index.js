@@ -1,6 +1,7 @@
-import * as React from 'react'
+import * as React from 'react';
 // import Layout from '../components/layout'
-import { StaticImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image';
+import Pricing from '../components/ThePricingSection';
 
 const IndexPage = () => {
   return (
@@ -69,6 +70,10 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
+        <Pricing />
+        <h2>One off costs</h2>
+        <p>Video: £50</p>
+        <p>One Page Custom Website: £250</p>
       </div>
   )
 }
